@@ -16,13 +16,13 @@ and see how your package value changes!
 # salary = st.sidebar.number_input('Gross yearly salary in USD')
 
 st.sidebar.write('**Equity**')
-equity = st.sidebar.number_input('Stock options granted, vested over 4 years',1000)
+equity = st.sidebar.number_input('Stock options granted, vested over 4 years',value=1000)
 
 st.sidebar.write('**Strike price**')
-strike = st.sidebar.number_input('Price at which you can purchase options ($)')
+strike = st.sidebar.number_input('Price at which you can purchase options ($)',value=.01)
 
 st.sidebar.write('**Number of fully diluted shares**')
-totshares = st.sidebar.number_input('Existing shares at the time of the offer',10000)
+totshares = st.sidebar.number_input('Existing shares at the time of the offer',value=10000)
 
 st.sidebar.write('**Your percentage ownership**')
 perc = equity/totshares
