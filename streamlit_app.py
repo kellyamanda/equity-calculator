@@ -22,7 +22,7 @@ st.sidebar.write('**Strike price**')
 strike = st.sidebar.number_input('Price at which you can purchase options ($)',value=.01)
 
 st.sidebar.write('**Number of fully diluted shares**')
-totshares = st.sidebar.number_input('Existing shares at the time of the offer',value=100000)
+totshares = st.sidebar.number_input('Existing shares at the time of the offer',value=1000000)
 
 st.sidebar.write('**Your percentage ownership**')
 perc = equity/totshares
